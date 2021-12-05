@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Teste de Velocidade de Digitação em JS</title>
     <script src="script.js" async></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i" type="text/css" media="all">
+    <!-- <script src="paste.js" defer></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i,900,900i"
+        type="text/css" media="all">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,17 +18,22 @@
     </header>
     <main class="main">
         <section class="intro">
-            <p> Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa sorte! </p>
+            <p> Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O
+                timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa
+                sorte! </p>
         </section>
         <!-- .intro -->
         <section class="test-area">
             <div id="origin-text">
-                <p>Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo. O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao original. Boa sorte!</p>
+                <p>Este é um teste de digitação. Seu objetivo é duplicar o texto fornecido, EXATAMENTE, no campo abaixo.
+                    O timer inicia quando você começa a digitar e só para quando o seu texto estiver idêntico ao
+                    original. Boa sorte!</p>
             </div>
             <!-- #origin-text -->
 
             <div class="test-wrapper">
-                <textarea id="test-area" name="textarea" rows="6" placeholder="O timer começa quando você começar a digitar."></textarea>
+                <textarea id="test-area" onpaste="return false;" name="textarea" rows="6"
+                    placeholder="O timer começa quando você começar a digitar."></textarea>
             </div>
             <!-- .test-wrapper -->
 
